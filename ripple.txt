@@ -1,0 +1,2 @@
+[authinfo_url]
+https://icloudcoin.org:27182/v1/authinfo

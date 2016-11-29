@@ -1,0 +1,24 @@
+section.col-xs-12.content(ng-controller="BalanceCtrl")
+  //- Disconnected
+
+  group.disconnected(ng-hide="connected")
+    p.literal(l10n) You have to be online to see this screen
+
+  group.disconnected(ng-hide="!connected || loadState.account")
+    //img(src="img/sections.png", class="loader", id="section_loader", ng-hide="exchangeRatesNonempty")
+
+  //- Connected
+  div(ng-show="!loadingAccount && !account.Balance && loadState.account && connected")  
+    include banner/unfunded
+
+  group(ng-show="connected && loadState.account")
+    //- include banner/announcement
+    .widgets.row
+      .col-xs-12.col-sm-8
+        //- include widgets/networth
+        //- include widgets/assetallocation
+        include widgets/balances
+
+      //- .col-xs-12.col-sm-8
+      //-   include widgets/markets
+      //-   include widgets/orders

@@ -1,0 +1,17 @@
+{
+  "name": "ripple-vault-client",
+  "version": "0.4.7",
+  "homepage": "https://github.com/ripple/ripple-vault-client",
+  "description": "The Ripple JavaScript Blobvault Client",
+  "main": "./ripple-vault-client.js",
+  "dependencies": {},
+  "_release": "0.4.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.7",
+    "commit": "f256800fc8649290c059a2e22954ee7f91927999"
+  },
+  "_source": "git://github.com/ripple/bower-ripple-vault-client.git",
+  "_target": "~0.4.7",
+  "_originalSource": "ripple-vault-client"
+}
